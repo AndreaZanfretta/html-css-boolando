@@ -54,7 +54,6 @@
     width: 45%;
     margin: 0 auto;
     margin-top: 10px;
-    border: 1px solid black;
 }
 
 .cards{
@@ -133,4 +132,8 @@
 
 .cards:hover .hover-pic{
     display: block;
+}
+
+.foto:hover::after{
+    color: red;
 }
