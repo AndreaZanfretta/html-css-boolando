@@ -27,8 +27,8 @@
 }
 
 .cards{
-    height: 300px;
-    width: 33.3%;
+    height: 400px;
+    width: calc((100% / 3) - 3px);
     padding: 0 5px;
     background-color: aquamarine;
     display: inline-block;
