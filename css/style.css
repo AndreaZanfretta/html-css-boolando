@@ -19,8 +19,9 @@
 
 /* Main */
 
+
 .row{
-    width: 40%;
+    width: 45%;
     margin: 0 auto;
     margin-top: 10px;
     border: 1px solid black;
@@ -30,12 +31,11 @@
     height: 450px;
     width: calc(100% / 3);
     padding: 0 5px;
-    background-color: aquamarine;
     display: inline-block;
 }
 
 .foto{
-    height: 80%;
+    height: 90%;
 }
 
 .foto .default-pic{
@@ -45,6 +45,36 @@
     display: inline-block;
 }
 
+/* descrizione prodotto */
 
+.brand{
+    margin-top: 10px;
+    color: rgb(99, 99, 99);
+    font-size: x-small;
+}
+
+.name{
+    font-weight: bold;
+    font-size: small;
+}
+
+.price{
+    font-size: x-small;
+    color: red;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.euro:after{
+    content: "\20AC";
+}
+
+.lined{
+    font-size: x-small;
+    color: rgb(99, 99, 99);
+    text-decoration: line-through;
+}
+
+/* elementi hover */
 
 
