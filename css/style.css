@@ -6,16 +6,46 @@
 /* General */
 
 .discount{
-
+    position: absolute;
+    background-color: red;
+    bottom: 5px;
+    padding: 3px;
+    color: white;
+    font-weight: bold;
+    font-size: x-small;
+    display: none;
 }
 
-.sostenibilità{
-
+.sostenibilita{
+    position: absolute;
+    background-color:#00875a;
+    bottom: 5px;
+    left: 35px;
+    padding: 3px;
+    color: white;
+    font-weight: bold;
+    font-size: x-small;
+    display: none;
 }
 
-.discount-prize{
-
+.discount-price{
+    font-size: x-small;
+    color: rgb(99, 99, 99);
+    text-decoration: line-through;
 }
+
+.hover-pic{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+
 
 /* Main */
 
@@ -36,6 +66,7 @@
 
 .foto{
     height: 90%;
+    position: relative;
 }
 
 .foto .default-pic{
@@ -43,6 +74,20 @@
     width: 100%;
     object-fit: cover;
     display: inline-block;
+    position: relative;
+}
+
+.foto::after{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    content: "\2665";
+    position: absolute;
+    top: 15px;
+    right: 2px;
 }
 
 /* descrizione prodotto */
@@ -78,3 +123,14 @@
 /* elementi hover */
 
 
+.cards:hover .discount{
+    display: block;
+}
+
+.cards:hover .sostenibilita{
+    display: block;
+}
+
+.cards:hover .hover-pic{
+    display: block;
+}
